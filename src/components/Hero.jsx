@@ -1,4 +1,4 @@
-import { logo } from "../assets";
+import { logo, git } from "../assets";
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <img src={logo} alt="sumz_logo" className="w-28 object-contain" />
 
-        <button
+        {/* <button
           type="button"
           onClick={() =>
             window.open("https://github.com/RikasMRM/SummAI", "_blank")
@@ -14,12 +14,22 @@ const Hero = () => {
           className="black_btn"
         >
           GitHub
+        </button> */}
+
+        <button
+          type="button"
+          onClick={() =>
+            window.open("https://github.com/RikasMRM", "_blank")
+          }
+          className="black_btn"
+        >
+          <img src={git} alt="GitHub" className="w-5 object-contain"/>
         </button>
       </nav>
 
       <h1 className="head_text">
         Summarize Articles with <br className="max-md:hidden" />
-        <span className="orange_gradient ">OpenAI GPT-4</span>
+        <span className="purple_gradient">OpenAI GPT-4</span>
       </h1>
       <h2 className="desc">
         Simplify your reading with Summize, an open-source article summarizer
