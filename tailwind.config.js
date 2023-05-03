@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-      }
+        satoshi: ["Satoshi", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        roboto: ["Inter", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};
